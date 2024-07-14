@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 9 Checkers</title>
+    <link rel="stylesheet" href="./style/checkers.css">
+</head>
+<body>
+    <header>
+        <h1>Here is our awesome checkers board</h1>
+    </header>
+    <main>
+        <!-- This is where we will add the checkers board through javascript code -->
+        <div id="divCheckers"></div>
+        <span id="selectedSquare" style="display: none;"></span>
+    </main>
+    <!-- Added the link to our file for js -->
+    <script src="./js/checkers.js"></script>
+
+    <script>
+        //Set up the nickname/shortcut where the checkers board should go
+        var checkersBoard = document.getElementById("divCheckers");
+
+        // call the function to create the checkers board
+        createCheckersBoard(checkersBoard);
+    </script>
+
+
+</body>
+</html>
